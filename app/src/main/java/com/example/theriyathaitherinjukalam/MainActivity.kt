@@ -43,11 +43,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ChatScreen() {
     var question = remember {
-        mutableStateOf("")
-    }
+        mutableStateOf("")}
     val messages = remember {
         mutableStateListOf<String>()
-    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
